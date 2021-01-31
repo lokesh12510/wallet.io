@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <section>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="nav-items">
+                    <div class="logo">
+                        <a href="" class="waves-effect waves-light modal-trigger" data-target="books"><i class="material-icons">add_box</i></a>
+                        <a href="" class="waves-effect waves-light modal-trigger" data-target="books">New</a>
+                    </div>
+                    <div class="settings">
+                        <a href=""><i class="material-icons">more_vert</i></a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+    <section>
+        <div class="footer_items">
+            <div class="a_btn credit_in">
+                <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Credit In</button>
+            </div>
+            <div class="a_btn debit_out">
+                <button class="waves-effect waves-light btn modal-trigger" data-target="modal2">Debit Out</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="search-bar">
+            <div class="input-field topsearch">
+                <i class="material-icons">search</i>
+                <input type="text" id="searchid" placeholder="search">
+                <i class="material-icons waves-effect modal-trigger" data-target="filter">filter_alt</i>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="amount-card">
+            <div class="amount-body">
+                <h4>$ 20,000<span style="font-size: 14px;">.00</span></h4>
+                <p>TOTAL CASH</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="category-card">
+            <div class="box cashin">
+
+                <h5>$ 25,000<span style="font-size: 14px;">.00</span></h5>
+                <p>CREDIT</p>
+
+            </div>
+            <div class="box cashout">
+
+                <h5>$ 5,000<span style="font-size: 14px;">.00</span></h5>
+                <p>DEBIT</p>
+
+            </div>
+        </div>
+    </section>
+    <hr class="line">
+    <section>
+        <div class="activity">
+            <div class="title">
+                <p>Activity</p>
+            </div>
+            <!-- card  -->
+
+            <div class="a_card a_credit">
+                <div class="icon">
+                    <i class="material-icons">price_check</i>
+                </div>
+                <div class="a_data">
+                    <h5>$ 5000</h5>
+                    <p>From Savings</p>
+                </div>
+            </div>
+
+            <!-- card  -->
+            <!-- card  -->
+
+            <div class="a_card a_debit">
+                <div class="icon">
+                    <i class="material-icons">money_off</i>
+                </div>
+                <div class="a_data">
+                    <h5>$ 200</h5>
+                    <p>For Petrol</p>
+                </div>
+            </div>
+
+            <!-- card  -->
+            <!-- card  -->
+
+            <div class="a_card a_credit">
+                <div class="icon">
+                    <i class="material-icons">price_check</i>
+                </div>
+                <div class="a_data">
+                    <h5>$ 1400</h5>
+                    <p>From pocket money </p>
+                </div>
+            </div>
+
+            <!-- card  -->
+
+        </div>
+    </section>
+
+
+    <section>
+        <!--Credit Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="m_header">
+
+                    <a class="modal-action modal-close waves-effect"><i class="material-icons">close</i></a>
+
+
+                    <h6>Credit Cash</h6>
+                    <i class="material-icons">plus</i>
+                </div>
+                <form action="">
+                    <div class="input-field">
+                        <input type="date" class="datepicker" id="c_date" required>
+                        <label for="adate">Date</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" name="" id="c_amount">
+                        <label for="amount">Amount</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="c_reason">
+                        <label for="reason">Reason</label>
+                    </div>
+                    <a href="" class="btn btn-block">CREDIT</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- credit model structure  -->
+
+        <!-- debit Modal Structure -->
+        <div id="modal2" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="m_header">
+
+                    <a class="modal-action modal-close waves-effect"><i class="material-icons">close</i></a>
+
+
+                    <h6>Debit Cash</h6>
+                    <i class="material-icons">minus</i>
+                </div>
+                <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+                <form action="">
+                    <div class="input-field">
+                        <input type="date" class="datepicker" id="d_date" required>
+                        <label for="adate">Date</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" name="" id="d_amount">
+                        <label for="amount">Amount</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="d_reason">
+                        <label for="reason">Reason</label>
+                    </div>
+                    <a href="" class="btn btn-block">DEBIT</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- debit model structure   -->
+    </section>
+
+    <section>
+        <!-- books Modal Structure -->
+        <div id="books" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="m_header">
+
+                    <a class="modal-action modal-close waves-effect"><i class="material-icons">close</i></a>
+
+
+                    <h6>Your Cashbooks</h6>
+
+                </div>
+                <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+                <div class="book_list">
+                    <div class="book active">
+                        <div class="b_name">
+                            <i class="material-icons book-icon">book</i>
+                            <p class="book_name">New</p>
+                        </div>
+                        <div class="b_action">
+                            <i class="material-icons check green-text">check</i>
+                            <i class="material-icons">more_vert</i>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="b_name">
+                            <i class="material-icons book-icon">book</i>
+                            <p class="book_name">salary</p>
+                        </div>
+                        <div class="b_action">
+                            <i class="material-icons check green-text">check</i>
+                            <i class="material-icons">more_vert</i>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-block modal-trigger" data-target="newbook">Create New</a>
+            </div>
+        </div>
+
+        <!-- bpoks model structure   -->
+    </section>
+    <section>
+        <!-- books Modal Structure -->
+        <div id="newbook" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="m_header">
+
+                    <a class="modal-action modal-close waves-effect"><i class="material-icons">close</i></a>
+
+
+                    <h6>Create New book</h6>
+
+                </div>
+                <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+                <br>
+                <div class="input-field">
+                    <input type="text" id="book_name" required>
+                    <label for="book_name">Enter Book Name</label>
+                </div>
+                <a href="" class="btn btn-block">save</a>
+            </div>
+        </div>
+
+        <!-- bpoks model structure   -->
+    </section>
+    <section>
+        <!-- filter Modal Structure -->
+        <div id="filter" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="m_header">
+
+                    <a class="modal-action modal-close waves-effect"><i class="material-icons">close</i></a>
+
+
+                    <h6>Filter</h6>
+
+                </div>
+                <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+                <br>
+                <div class="tags">
+                    <h5>Date Range</h5>
+                    <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+
+                    <div class="chip">
+                        Today
+                        <!-- <i class="close material-icons">close</i> -->
+                    </div>
+                    <div class="chip">
+                        Week
+                    </div>
+                    <div class="chip">
+                        Month
+                    </div>
+                    <div class="chip">
+                        Year
+                    </div>
+                    <div class="chip">
+                        custom
+                    </div>
+                </div>
+                <div class="tags">
+                    <h5>Filter By</h5>
+                    <hr style="height: .1px;border: none; background-color: rgb(219, 219, 219);">
+
+                    <div class="chip">
+                        Credit
+                        <!-- <i class="close material-icons">close</i> -->
+                    </div>
+                    <div class="chip">
+                        Debit
+                    </div>
+
+                </div>
+                <a href="" class="btn btn-block">Apply</a>
+            </div>
+        </div>
+
+        <!-- filter model structure   -->
+    </section>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <!-- script  -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var Modalelem = document.querySelectorAll('.modal');
+            var instanceModal = M.Modal.init(Modalelem, {});
+        });
+    </script>
+    <script>
+        const Calender = document.querySelectorAll('.datepicker');
+        M.Datepicker.init(Calender, {
+            format: 'yyyy-mm-dd',
+            showClearBtn: true,
+            setDate: new Date()
+        });
+    </script>
+
+
+    <!-- script  -->
+
+</body>
+
+</html>
