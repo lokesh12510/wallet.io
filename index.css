@@ -43,8 +43,12 @@ nav {
 
 /* footer  */
 
+.foo-container{
+    position:relative;
+}
+
 .footer_items {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     display: flex;
